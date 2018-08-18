@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/talk/talk",
+    "pages/index/index",
+    "pages/favorite/favorite",
+    "pages/about/about",
+    "pages/day/day"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor":"#000",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "今日",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+  "color":"#4d4d4d",
+  "selectedColor":"#fff",
+  "backgroundColor":"#000",
+  "borderStyle":"black",
+  "networkTimeout":{
+    "request": 8000
+  },
+  "list": [{
+    "pagePath": "pages/index/index",
+    "text": "今日",
+    "iconPath":"assert/jinri.png",
+    "selectedIconPath":"assert/jinri_hover.png"
+  },{
+    "pagePath": "pages/talk/talk",
+    "text": "碎碎念",
+    "iconPath":"assert/talk.png",
+    "selectedIconPath":"assert/talk_hover.png"
+  },{
+    "pagePath": "pages/favorite/favorite",
+    "text": "收藏",
+    "iconPath":"assert/favorite.png",
+    "selectedIconPath":"assert/favorite_hover.png"
+  }, {
+    "pagePath": "pages/about/about",
+    "text": "关于",
+    "iconPath":"assert/info.png",
+    "selectedIconPath":"assert/info_hover.png"
+  }]
+}
+}

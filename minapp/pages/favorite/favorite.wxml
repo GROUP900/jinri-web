@@ -1,0 +1,18 @@
+<view class='likelist' bindtap='goto' bindtouchstart='Record' bindtouchmove='Moving' bindtouchend='release'>
+  <view wx:for="{{data}}" wx:key="{{index}}">
+    <view class="likeblock" style='transform:translate3d({{item.pos}}px,0,0)'>
+      <view class='link' data-day="{{item.day}}" data-index='{{index}}'></view>
+      <text>{{item.splitedd[0]}}<text class='small'>{{item.splitedd[1]}}/{{item.splitedd[2]}}</text></text>
+      <button open-type='share' data-date="{{item.day}}"></button>
+      <view class='shader' style="background:{{item.color}};" ></view>
+      <image src="{{item.likeimgurl}}"></image>
+    </view>
+    <view class='delbtn' bindtap='delcard'><text>删除</text></view>
+  </view>
+</view>
+
+<view class='hint' wx:if="{{!datafetched}}">
+  <icon type="info" size="100" color="#b2b2b2"/>
+  <text>还没有喜欢过</text>
+  <text class='small'>上滑日签后点击喜欢，你喜欢的日签会出现在这里</text>
+</view>

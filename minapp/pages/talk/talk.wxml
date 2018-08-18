@@ -1,0 +1,53 @@
+<view class='talkwrapper'>
+  <view class='shade'>
+    <view class='talkform'>
+      <view class='control'>
+        <text>说你想说的</text>
+      </view>
+      <textarea placeholder="但只能写五行，每行最好在10个字以内" maxlength='60'/>
+    </view>
+  </view>
+  <view class='tab'>
+    <view class='active'><text>最新</text></view>
+    <view><text>喜欢</text></view>
+    <view><text>日榜</text></view>
+  </view>
+  <view class='paneltrig'>有话要说</view>
+  <scroll-view class='talklist' scroll-y>
+
+    <view class='talklistwrapper'>
+        <view class='talkcard'>
+          <view class='info'>
+            <text>智力猫</text>
+            <text class='time'>三天前</text>
+          </view>
+          <view class='talk'>
+            <text>就算在711</text>
+          </view>
+          <view class='data'>
+
+              <view class='block'>
+                <text>喜欢</text>
+                <text class='number'>1425</text>
+              </view>
+              <view class='block'>
+                <text>今日</text>
+                <text class='number'>VOL.45</text>
+              </view>
+              <view class='block'>
+                <text>优秀</text>
+                <text class='number'>24hrs</text>
+              </view>
+
+              <view class='heart'>
+              心
+              </view>
+
+              <view class='clear'></view>
+
+          </view>
+        </view>
+    </view>
+
+  </scroll-view>
+</view>

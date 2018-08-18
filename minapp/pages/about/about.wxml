@@ -1,0 +1,39 @@
+<!--about.wxml-->
+<view class='about'>
+  <view class='howto'>
+    <view class='ht1'>
+      <image mode='aspectFit' src='/assert/swipe.svg'></image>
+      <text>昨日/今日</text>
+    </view>
+    <view class='ht2'>
+      <image mode='aspectFit' src='/assert/tap.svg'></image>
+      <text>切换图层</text>
+    </view>
+    <view class='ht3'>
+      <image mode='aspectFit' src='/assert/hold.svg'></image>
+      <text>长按下载</text>
+    </view>
+    <view class='flexholder'></view>
+  </view>
+
+  <view class='info'>
+    <text class='title'>使用和分享【今日Lite】</text>
+    <text class='guide'>如果你想分享今日的日签到朋友圈，请先下载图片后再发布，非常感谢你的分享！
+    在https://jinri.nine00.com可以查看月度的日签集合和体验更多功能。</text>
+
+    <text class='title'>重新定义的：早知今日 何必当初</text>
+    <text class='guide'>今日翻译为Today，最直接的意思就是今天，将今天的所见所闻，所想所念所思考都通过影像和小文的形式记录下来，没有定义也没有界限，只是单纯的抒发情绪，为什么是今日？
+因为希望可以活在当下，不去纠结过去也不盲目未来，认真的把今天过完，这就够了，其他的，交给时间。</text>
+
+    <text class='title'>每日推送</text>
+    <text class='guide'>关注微信公众号“有文艺”，关注以和我们交流并获取最新内容的推送。</text>
+
+    <text class='title'>共享的今日</text>
+    <text class='guide'>今日在当前版本中开放了一套完整的API，
+    你可以通过调用它们使今日的内容显示在你的站点和应用中，
+    你可以在https://jinri.nine00.com上查看他们。
+    如果你有了任何想法，欢迎与我们讨论，在“有文艺”公众号留言或发邮件到witcat@nine00.com</text>
+
+    <text class='copy'>© TODAY,900</text>
+  </view>
+</view>

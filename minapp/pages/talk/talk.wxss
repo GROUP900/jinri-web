@@ -1,0 +1,143 @@
+.tab {
+position:absolute;
+top:0;
+left:0;
+width:100%;
+box-sizing:border-box;
+display:flex;
+font-size:34rpx;
+font-weight:bold;
+color:white;
+background:black;
+justify-content:space-around;
+padding:0 90rpx;
+height:120rpx;
+z-index:500;
+}
+.tab > view {
+width:100%;
+text-align:center;
+line-height:120rpx;
+margin:0 10rpx;
+border-bottom:solid 6rpx black;
+}
+
+.tab > view.active {
+border-bottom:solid 6rpx white;
+}
+
+.talkwrapper {
+width:100%;
+height:100%;
+}
+
+.talklist {
+padding-top:152rpx;
+position:absolute;
+z-index:1;
+background:#222222;
+width:100%;
+height:100%;
+box-sizing:border-box;
+}
+
+.talklistwrapper {
+width:74%;
+margin:0 auto;
+}
+
+.talkcard {
+color:#353535;
+background:white;
+border-radius:16rpx;
+width:100%;
+}
+
+.talkcard .info {
+font-size:22rpx;
+padding:22rpx 42rpx 12rpx 42rpx;
+display:flex;
+justify-content:space-between;
+}
+
+.talkcard .info .time {
+color:#B2B2B2;
+}
+
+.talkcard .talk{
+font-size:34rpx;
+line-height:48rpx;
+font-weight:bold;
+padding:0 42rpx 22rpx 42rpx;
+border-bottom:solid 1px #EBEBEB;
+}
+
+.talkcard .data {
+padding:22rpx 42rpx;
+color:#B2B2B2;
+}
+
+.talkcard .data>.block{
+margin-right:40rpx;
+font-size:22rpx;
+float:left;
+}
+
+.talkcard .data .block .number{
+font-size:34rpx;
+font-family:din;
+display:block;
+}
+
+.heart {
+float:right;
+}
+
+
+.clear{
+clear:both;
+}
+
+.paneltrig{
+position:fixed;
+bottom:28rpx;
+color:black;
+background:#F44336;
+border-radius:1000px;
+font-size:34rpx;
+font-weight:bolder;
+padding:22rpx 64rpx;
+z-index:500;
+transform:translateX(-50%);
+left:50%;
+}
+
+
+.shade {
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.6);
+z-index:999;
+}
+
+.talkform {
+color:white;
+height:432rpx;
+width:100%;
+background:#191919;
+padding:22rpx 30rpx;
+box-sizing:border-box;
+}
+
+.talkform .control{
+font-size:26rpx;
+margin-bottom:22rpx;
+}
+
+.talkform textarea {
+width:100%;
+font-size:34rpx;
+font-weight:bolder;
+line-height:48rpx;
+}

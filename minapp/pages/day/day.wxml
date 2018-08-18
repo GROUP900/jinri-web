@@ -1,0 +1,31 @@
+  <view class='stage day' bindlongtap='Download'>
+  <view class='date'>
+    <view wx:if="{{prevpost[0]}}" class='llabel {{direction}}'><image class='left' src='/assert/arrow.svg'></image><text>{{prevpost[0]}}<text class="small">{{prevpost[1]}}/{{prevpost[2]}}</text></text></view>
+    <view wx:if="{{nextpost[0]}}" class='rlabel {{direction}}'><image class='right' src='/assert/arrow.svg'></image><text>{{nextpost[0]}}<text class="small">{{nextpost[1]}}/{{nextpost[2]}}</text></text></view>
+    <view wx:else class='rlabel nomore {{direction}}'><text>SEE YOU<text class="small">SOON...</text></text></view>
+  </view>
+    <movable-area class='movablewrapper {{openinfo}}'>
+      <movable-view class='picwrapper' x="{{x}}" y="{{y}}" direction="all" out-of-bounds='true'>
+        <view class='picview {{attachClass}}' bindtouchstart='Recordpoint' bindtouchcancel='Touchcancel' bindtouchmove='Moving' bindtap='Switch' bindtouchend='Release'>
+          <image src="{{imgurl}}" mode="widthFix" class='frontpic' bindload='picLoaded'>
+          </image>
+          <image src="{{wpimgurl}}" mode="widthFix" class='backpic'>
+          </image>
+        </view>
+      </movable-view>
+    </movable-area>
+    <view class='infopanel {{openinfo}}'>
+      <rich-text nodes="{{content}}">
+      </rich-text>
+      <view class='picdetail'>
+        <view bindtap='up' wx:if="{{!uped}}" ><image src='/assert/heart.svg' style='width:44rpx;height:38rpx;'></image><text>{{raw.up}}</text></view>
+        <view wx:else class='active'><image src='/assert/heart.svg' style='width:44rpx;height:38rpx;'></image><text>{{raw.up}}</text></view>
+        <view wx:if="{{liked}}" bindtap='unlike' class='active'><image src='/assert/collect.svg' style='width:40rpx;height:38rpx;'></image><text>取消收藏</text></view>
+        <view wx:else bindtap='like'><image src='/assert/collect.svg' style='width:40rpx;height:38rpx;'></image><text>收藏</text></view>
+        <view><image src='/assert/explore.svg' style='width:56rpx;height:44rpx;'></image><text>探索</text></view>
+      </view>
+    </view>
+  </view>
+  <view class='sharebtn {{attachClass}}'>
+    <button open-type='share'></button>
+  </view>
